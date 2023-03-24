@@ -24,13 +24,13 @@ Now we’ll write two async functions which invoke myPromise():
 */
 
 async function noAwait() {
- let value = myPromise();
- console.log(value);
+  let value = myPromise();
+  console.log(value);
 }
 
 async function yesAwait() {
- let value = await myPromise();
- console.log(value);
+  let value = await myPromise();
+  console.log(value);
 }
 
 noAwait(); // Prints: Promise { <pending> }
